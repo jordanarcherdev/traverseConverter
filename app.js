@@ -56,21 +56,12 @@ let allFiles = [];
   let traverseResults = traverse(startFolder, allFiles)
   console.log(allFiles);
 
-  traverseResults.forEach(show => {
-    if(show.files){
-      show.files.forEach(season => {
-        if(season.files){
-          season.files.forEach(episode => {
-            let filePath = episode.path;
-            let output = checkExt(filePath, mkvArray, aviArray);
-            return output;
-          })
-        }
-
-      })
-    }
-    console.log('SHOWEND')
+  allFiles.forEach(file => {
+    let filePath = file;
+    let output = checkExt(filePath, mkvArray, aviArray);
+    return output;
   })
+
   process(mkvArray, aviArray).then(() => {
 
     processAVI(aviArray);
