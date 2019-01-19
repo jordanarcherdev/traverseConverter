@@ -15,7 +15,7 @@ Add the module into your functions (Not published on NPM yet) and require into y
       
   ```
   
-  The module will begin at your start directory and get all video files from within itself and its child directories.
+  The module will begin at your start directory and convert all video files from within itself and its child directories.
   
   # Available Formats
   You can convert between MOV/MP4/MKV/AVI/MPEG/WMV
