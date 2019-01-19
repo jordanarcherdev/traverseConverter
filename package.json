@@ -2,14 +2,13 @@
   "name": "traverseconverter",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jordan Archer",
   "license": "ISC",
   "dependencies": {
-    "async": "^2.6.1",
     "fluent-ffmpeg": "^2.1.2"
   }
 }
